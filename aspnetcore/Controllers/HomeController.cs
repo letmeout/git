@@ -12,6 +12,8 @@ namespace aspnetcore.Controllers
     {
         public IActionResult Index()
         {
+            var now = (DateTime.Now - DateTime.MinValue);
+            var twentyAgo = now.TotalDays - 20;
             return View();
         }
 
