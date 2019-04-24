@@ -1,5 +1,5 @@
 {
-  "FilePath": "d:\\WorkFolder\\GIT\\learngit\\aspnetcore\\aspnetcore.csproj",
+  "FilePath": "d:\\WorkFolder\\GIT\\learngit\\aspnetcoreapp\\aspnetcoreapp.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -192,7 +192,7 @@
             "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
-            "Documentation": "\n            <summary>\n            The name of the action method.\n            </summary>\n            <remarks>\n            Must be <c>null</c> if <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Route\" /> or <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Page\" /> is non-<c>null</c>.\n            </remarks>\n        ",
+            "Documentation": null,
             "Diagnostics": [],
             "Metadata": {
               "Common.PropertyName": "Action"
@@ -2756,7 +2756,7 @@
     ],
     "CSharpLanguageVersion": 703
   },
-  "RootNamespace": "aspnetcore",
+  "RootNamespace": "aspnetcoreapp",
   "Documents": [
     {
       "FilePath": "Views\\Shared\\Error.cshtml",
@@ -2784,11 +2784,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Home\\About.cshtml",
-      "TargetPath": "Views\\Home\\About.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
@@ -2796,11 +2791,6 @@
     {
       "FilePath": "Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views\\Home\\Contact.cshtml",
-      "TargetPath": "Views\\Home\\Contact.cshtml",
       "FileKind": "mvc"
     },
     {
