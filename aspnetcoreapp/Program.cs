@@ -14,6 +14,7 @@ namespace aspnetcoreapp
     {
         public static void Main(string[] args)
         {
+            Console.WriteLine("Program Started");
             CreateWebHostBuilder(args).Build().Run();
         }
 
