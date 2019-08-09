@@ -21,13 +21,12 @@ namespace aspnetcoreapp
     public class Startup
     {
         private readonly IHostingEnvironment _env;
-        private readonly IConfiguration _config;
         private readonly ILoggerFactory _loggerFactory;
         public Startup(IHostingEnvironment env, IConfiguration config, ILoggerFactory loggerFactory)
         {
             _env = env;
-            _config = config;
             _loggerFactory = loggerFactory;
+            Configuration = config;
         }
 
         public IConfiguration Configuration { get; }
@@ -38,6 +37,7 @@ namespace aspnetcoreapp
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
+                    
             services.AddDefaultIdentity<IdentityUser>()
                 .AddDefaultUI(UIFramework.Bootstrap4)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
@@ -50,8 +50,11 @@ namespace aspnetcoreapp
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            services.AddTransient<IStartupFilter, RequestSetOptionsStartupFilter>();
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
+                .AddSessionStateTempDataProvider();
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -60,6 +63,7 @@ namespace aspnetcoreapp
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseDatabaseErrorPage();
             }
             else
             {
@@ -71,6 +75,11 @@ namespace aspnetcoreapp
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
+            app.UseAuthentication();
+            app.UseSession();
+            
+            app.UseRequestCulture();
+            app.UseRequestEncryption();
 
             app.UseMvc(routes =>
             {

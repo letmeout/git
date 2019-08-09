@@ -2982,5 +2982,6 @@
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     }
-  ]
+  ],
+  "SerializationFormat": "0.1"
 }
