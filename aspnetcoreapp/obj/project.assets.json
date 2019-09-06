@@ -12147,7 +12147,8 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "http://nexus-smw.taylordigital.inet/repository/nuget-smartworks": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://pkgs.dev.azure.com/TaylorArtifacts/_packaging/smw-nuget-private-feed/nuget/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.2": {
