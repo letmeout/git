@@ -12,5 +12,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0"/>
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="2.2.5"/>
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="2.2.0"/>
+    <PackageReference Include="Aspose.BarCode" Version="19.9.0"/>
+    <PackageReference Include="BarcodeLib" Version="2.2.2"/>
   </ItemGroup>
 </Project>

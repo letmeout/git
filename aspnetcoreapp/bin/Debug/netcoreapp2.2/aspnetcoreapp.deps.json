@@ -24,6 +24,8 @@
     ".NETCoreApp,Version=v2.2": {
       "aspnetcoreapp/1.0.0": {
         "dependencies": {
+          "Aspose.BarCode": "19.9.0",
+          "BarcodeLib": "2.2.2",
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Identity": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.2.0",
@@ -39,6 +41,34 @@
         },
         "compile": {
           "aspnetcoreapp.dll": {}
+        }
+      },
+      "Aspose.BarCode/19.9.0": {
+        "dependencies": {
+          "System.Drawing.Common": "4.5.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Aspose.BarCode.dll": {
+            "assemblyVersion": "19.9.0.0",
+            "fileVersion": "19.9.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Aspose.BarCode.dll": {}
+        }
+      },
+      "BarcodeLib/2.2.2": {
+        "dependencies": {
+          "System.Drawing.Common": "4.5.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/BarcodeStandard.dll": {
+            "assemblyVersion": "2.2.2.0",
+            "fileVersion": "2.2.2.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/BarcodeStandard.dll": {}
         }
       },
       "Microsoft.AspNetCore.Identity.UI/2.2.5": {
@@ -133,6 +163,25 @@
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {}
         }
       },
+      "Microsoft.Win32.SystemEvents/4.5.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.6.26515.6"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp2.0/Microsoft.Win32.SystemEvents.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.6.26515.6"
+          }
+        }
+      },
       "Remotion.Linq/2.2.0": {
         "dependencies": {
           "System.Collections": "4.3.0",
@@ -221,6 +270,35 @@
         },
         "compile": {
           "ref/netcoreapp2.1/System.Data.SqlClient.dll": {}
+        }
+      },
+      "System.Drawing.Common/4.5.1": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.2.0",
+          "Microsoft.Win32.SystemEvents": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Drawing.Common.dll": {
+            "assemblyVersion": "4.0.0.1",
+            "fileVersion": "4.6.26919.2"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netcoreapp2.0/System.Drawing.Common.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.1",
+            "fileVersion": "4.6.26919.2"
+          },
+          "runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.1",
+            "fileVersion": "4.6.26919.2"
+          }
+        },
+        "compile": {
+          "ref/netstandard2.0/System.Drawing.Common.dll": {}
         }
       },
       "System.Interactive.Async/3.2.0": {
@@ -3330,6 +3408,20 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Aspose.BarCode/19.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gaUk0OV6EdK27/n7id4YLzxLccX7Gcj3OFKS9HCBOTyALOItvMK3NaKT5O0mkAI9WxZt/NIUX6zGBknxd+OLeA==",
+      "path": "aspose.barcode/19.9.0",
+      "hashPath": "aspose.barcode.19.9.0.nupkg.sha512"
+    },
+    "BarcodeLib/2.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Ey9cKYV/Xdpo8ASvBTc1Cuni6xyp2WvHMuvFp57qm1sHXMs9bbnxNKY0LhIZ4Um+qPlwqWw3SxRzHOMiPIGWxQ==",
+      "path": "barcodelib/2.2.2",
+      "hashPath": "barcodelib.2.2.2.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Identity.UI/2.2.5": {
       "type": "package",
       "serviceable": true,
@@ -3371,6 +3463,13 @@
       "sha512": "sha512-rNnCA7ntlpITeYl1p3lAeS0kyHhETlanTghfpoDgyGIoxyUm2VsI2eyzL6EMYrqWnhAOwx3HzP0/50XRM/0CHw==",
       "path": "microsoft.entityframeworkcore.sqlserver/2.2.6",
       "hashPath": "microsoft.entityframeworkcore.sqlserver.2.2.6.nupkg.sha512"
+    },
+    "Microsoft.Win32.SystemEvents/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LuI1oG+24TUj1ZRQQjM5Ew73BKnZE5NZ/7eAdh1o8ST5dPhUnJvIkiIn2re3MwnkRy6ELRnvEbBxHP8uALKhJw==",
+      "path": "microsoft.win32.systemevents/4.5.0",
+      "hashPath": "microsoft.win32.systemevents.4.5.0.nupkg.sha512"
     },
     "Remotion.Linq/2.2.0": {
       "type": "package",
@@ -3420,6 +3519,13 @@
       "sha512": "sha512-7MTJhBFt4/tSJ2VRpG+TQNPcDdbCnWuoYzbe0kD5O3mQ7aZ2Q+Q3D9Y5Y3/aper5Gp3Lrs+8edk9clvxyPYXPw==",
       "path": "system.data.sqlclient/4.6.1",
       "hashPath": "system.data.sqlclient.4.6.1.nupkg.sha512"
+    },
+    "System.Drawing.Common/4.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GiyeGi/v4xYDz1vCNFwFvhz9k1XddOG7VD3jxRqzRBCbTHji+s3HxxbxtoymuK4OadEpgotI8zQ5+GEEH9sUEQ==",
+      "path": "system.drawing.common/4.5.1",
+      "hashPath": "system.drawing.common.4.5.1.nupkg.sha512"
     },
     "System.Interactive.Async/3.2.0": {
       "type": "package",
