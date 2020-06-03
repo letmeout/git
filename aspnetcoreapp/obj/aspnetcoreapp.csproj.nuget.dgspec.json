@@ -1,21 +1,18 @@
 {
   "format": 1,
   "restore": {
-    "D:\\WorkFolder\\GIT\\learngit\\aspnetcoreapp\\aspnetcoreapp.csproj": {}
+    "D:\\WorkFolder\\WorkSpaces\\learngit\\aspnetcoreapp\\aspnetcoreapp.csproj": {}
   },
   "projects": {
-    "D:\\WorkFolder\\GIT\\learngit\\aspnetcoreapp\\aspnetcoreapp.csproj": {
+    "D:\\WorkFolder\\WorkSpaces\\learngit\\aspnetcoreapp\\aspnetcoreapp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\WorkFolder\\GIT\\learngit\\aspnetcoreapp\\aspnetcoreapp.csproj",
+        "projectUniqueName": "D:\\WorkFolder\\WorkSpaces\\learngit\\aspnetcoreapp\\aspnetcoreapp.csproj",
         "projectName": "aspnetcoreapp",
-        "projectPath": "D:\\WorkFolder\\GIT\\learngit\\aspnetcoreapp\\aspnetcoreapp.csproj",
+        "projectPath": "D:\\WorkFolder\\WorkSpaces\\learngit\\aspnetcoreapp\\aspnetcoreapp.csproj",
         "packagesPath": "C:\\Users\\bfeng\\.nuget\\packages\\",
-        "outputPath": "D:\\WorkFolder\\GIT\\learngit\\aspnetcoreapp\\obj\\",
+        "outputPath": "D:\\WorkFolder\\WorkSpaces\\learngit\\aspnetcoreapp\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\bfeng\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -25,8 +22,9 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://nexus-smw.taylordigital.inet/repository/nuget-smartworks": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "\\\\piifs07\\Departments\\Information Technology\\PIINuget": {},
+          "http://nuget.whateverittakes.com:8081/nuget": {},
+          "https://www.nuget.org/api/v2/": {}
         },
         "frameworks": {
           "netcoreapp2.2": {
@@ -42,6 +40,14 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
+            "Aspose.BarCode": {
+              "target": "Package",
+              "version": "[19.9.0, )"
+            },
+            "BarcodeLib": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",
@@ -85,10 +91,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

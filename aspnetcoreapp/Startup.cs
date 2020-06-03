@@ -22,21 +22,22 @@ namespace aspnetcoreapp
     {
         private readonly IHostingEnvironment _env;
         private readonly ILoggerFactory _loggerFactory;
+        private readonly IConfiguration _config;
         public Startup(IHostingEnvironment env, IConfiguration config, ILoggerFactory loggerFactory)
         {
             _env = env;
+            _config = config;
             _loggerFactory = loggerFactory;
-            Configuration = config;
         }
 
-        public IConfiguration Configuration { get; }
+        //public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
-                    Configuration.GetConnectionString("DefaultConnection")));
+                    _config.GetConnectionString("DefaultConnection")));
                     
             services.AddDefaultIdentity<IdentityUser>()
                 .AddDefaultUI(UIFramework.Bootstrap4)
