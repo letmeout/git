@@ -8,6 +8,7 @@ using aspnetcoreapp.Models;
 using Aspose.BarCode.Generation;
 using Aspose.BarCode;
 using System.Drawing;
+using System.Text.Encodings.Web;
 
 namespace aspnetcoreapp.Controllers
 {
@@ -16,6 +17,9 @@ namespace aspnetcoreapp.Controllers
         public IActionResult Index()
         {
             GenerateBarCode();
+
+            ViewBag.Output = HtmlEncoder.Default.Encode("This is a sample, Yes!"); //<script>alert('Test@test.com')</script>
+
             return View();
         }
 
