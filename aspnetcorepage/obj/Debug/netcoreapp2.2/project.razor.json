@@ -1,5 +1,5 @@
 {
-  "FilePath": "d:\\WorkFolder\\GIT\\learngit\\aspnetcorepage\\aspnetcorepage.csproj",
+  "FilePath": "d:\\WorkFolder\\WorkSpaces\\learngit\\aspnetcorepage\\aspnetcorepage.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -2961,43 +2961,43 @@
   "RootNamespace": "aspnetcorepage",
   "Documents": [
     {
-      "FilePath": "d:\\WorkFolder\\GIT\\learngit\\aspnetcorepage\\Pages\\Error.cshtml",
-      "TargetPath": "Pages\\Error.cshtml",
+      "FilePath": "d:\\WorkFolder\\WorkSpaces\\learngit\\aspnetcorepage\\Pages\\Shared\\_CookieConsentPartial.cshtml",
+      "TargetPath": "Pages\\Shared\\_CookieConsentPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\WorkFolder\\GIT\\learngit\\aspnetcorepage\\Pages\\Privacy.cshtml",
-      "TargetPath": "Pages\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\WorkFolder\\GIT\\learngit\\aspnetcorepage\\Pages\\Index.cshtml",
-      "TargetPath": "Pages\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\WorkFolder\\GIT\\learngit\\aspnetcorepage\\Pages\\_ViewImports.cshtml",
-      "TargetPath": "Pages\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\WorkFolder\\GIT\\learngit\\aspnetcorepage\\Pages\\_ViewStart.cshtml",
-      "TargetPath": "Pages\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\WorkFolder\\GIT\\learngit\\aspnetcorepage\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\WorkFolder\\GIT\\learngit\\aspnetcorepage\\Pages\\Shared\\_Layout.cshtml",
+      "FilePath": "d:\\WorkFolder\\WorkSpaces\\learngit\\aspnetcorepage\\Pages\\Shared\\_Layout.cshtml",
       "TargetPath": "Pages\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\WorkFolder\\GIT\\learngit\\aspnetcorepage\\Pages\\Shared\\_CookieConsentPartial.cshtml",
-      "TargetPath": "Pages\\Shared\\_CookieConsentPartial.cshtml",
+      "FilePath": "d:\\WorkFolder\\WorkSpaces\\learngit\\aspnetcorepage\\Pages\\Index.cshtml",
+      "TargetPath": "Pages\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\WorkFolder\\WorkSpaces\\learngit\\aspnetcorepage\\Pages\\_ViewStart.cshtml",
+      "TargetPath": "Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\WorkFolder\\WorkSpaces\\learngit\\aspnetcorepage\\Pages\\Error.cshtml",
+      "TargetPath": "Pages\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\WorkFolder\\WorkSpaces\\learngit\\aspnetcorepage\\Pages\\_ViewImports.cshtml",
+      "TargetPath": "Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\WorkFolder\\WorkSpaces\\learngit\\aspnetcorepage\\Pages\\Privacy.cshtml",
+      "TargetPath": "Pages\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\WorkFolder\\WorkSpaces\\learngit\\aspnetcorepage\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     }
   ],
