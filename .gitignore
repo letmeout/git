@@ -24,6 +24,7 @@ ehthumbs_vista.db
 [Bb]in/
 [Dd]ebug*/
 [Oo]bj/
+[Oo]bj/[Dd]ebug*/
 [Rr]elease*/
 [Pp]ackages*/
 build/
