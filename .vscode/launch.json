@@ -12,7 +12,7 @@
             // If you have changed target frameworks, make sure to update the program path.
             "program": "${workspaceFolder}/aspnetcoreapp/bin/Debug/netcoreapp2.2/aspnetcoreapp.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/aspnetcoreapp",
+            "cwd": "${workspaceFolder}",
             "stopAtEntry": false,
             "internalConsoleOptions": "openOnSessionStart",
             "launchBrowser": {
@@ -45,7 +45,7 @@
             // If you have changed target frameworks, make sure to update the program path.
             "program": "${workspaceFolder}/aspnetcorepage/bin/Debug/netcoreapp2.2/aspnetcorepage.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/aspnetcorepage",
+            "cwd": "${workspaceFolder}",
             "stopAtEntry": false,
             "internalConsoleOptions": "openOnSessionStart",
             "launchBrowser": {
@@ -76,5 +76,14 @@
             "request": "attach",
             "processId": "${command:pickProcess}"
         }
-    ,]
+    ,],
+    "compounds": [
+        {
+            "name": "Debug Web App & Web Page",
+            "configurations": [
+                ".NET Core Launch App (web)",
+                ".NET Core Launch Page (web)"
+            ]
+        }
+    ]
 }
