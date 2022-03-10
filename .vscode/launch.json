@@ -10,7 +10,7 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/aspnetcoreapp/bin/Debug/netcoreapp2.2/aspnetcoreapp.dll",
+            "program": "${workspaceFolder}/aspnetcoreapp/bin/Debug/netcoreapp3.1/aspnetcoreapp.dll",
             "args": [],
             "cwd": "${workspaceFolder}/aspnetcoreapp",
             "stopAtEntry": false,
@@ -43,7 +43,7 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/aspnetcorepage/bin/Debug/netcoreapp2.2/aspnetcorepage.dll",
+            "program": "${workspaceFolder}/aspnetcorepage/bin/Debug/netcoreapp3.1/aspnetcorepage.dll",
             "args": [],
             "cwd": "${workspaceFolder}/aspnetcorepage",
             "stopAtEntry": false,
