@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aspnetcoreapp", "..\aspnetcoreapp\aspnetcoreapp.csproj", "{F221F52A-CDA4-4D90-B604-F1582121525E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aspnetcorepage", "..\aspnetcorepage\aspnetcorepage.csproj", "{F8DBBE51-F648-42B0-9DAD-43C434D5FF2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aspnetcoremvc", "..\aspnetcoremvc\aspnetcoremvc.csproj", "{A70E811C-2B76-41DF-8A6A-58E8C63DEAD5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F221F52A-CDA4-4D90-B604-F1582121525E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F221F52A-CDA4-4D90-B604-F1582121525E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F221F52A-CDA4-4D90-B604-F1582121525E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F221F52A-CDA4-4D90-B604-F1582121525E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8DBBE51-F648-42B0-9DAD-43C434D5FF2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8DBBE51-F648-42B0-9DAD-43C434D5FF2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8DBBE51-F648-42B0-9DAD-43C434D5FF2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8DBBE51-F648-42B0-9DAD-43C434D5FF2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A70E811C-2B76-41DF-8A6A-58E8C63DEAD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A70E811C-2B76-41DF-8A6A-58E8C63DEAD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A70E811C-2B76-41DF-8A6A-58E8C63DEAD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A70E811C-2B76-41DF-8A6A-58E8C63DEAD5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

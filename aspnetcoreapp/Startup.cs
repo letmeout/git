@@ -14,16 +14,16 @@ using Microsoft.Extensions.Logging;
 using aspnetcoreapp.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI;
-
+using Microsoft.Extensions.Hosting;
 
 namespace aspnetcoreapp
 {
     public class Startup
     {
-        private readonly IHostingEnvironment _env;
+        private readonly IWebHostEnvironment _env;
         private readonly ILoggerFactory _loggerFactory;
         private readonly IConfiguration _config;
-        public Startup(IHostingEnvironment env, IConfiguration config, ILoggerFactory loggerFactory)
+        public Startup(IWebHostEnvironment env, IConfiguration config, ILoggerFactory loggerFactory)
         {
             _env = env;
             _config = config;
@@ -40,7 +40,6 @@ namespace aspnetcoreapp
                     _config.GetConnectionString("DefaultConnection")));
                     
             services.AddDefaultIdentity<IdentityUser>()
-                .AddDefaultUI(UIFramework.Bootstrap4)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
 
@@ -53,18 +52,17 @@ namespace aspnetcoreapp
 
             services.AddTransient<IStartupFilter, RequestSetOptionsStartupFilter>();
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0)
                 .AddSessionStateTempDataProvider();
             services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseDatabaseErrorPage();
             }
             else
             {
